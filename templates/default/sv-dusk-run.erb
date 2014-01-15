@@ -8,4 +8,4 @@ cd <%= @options[:root] %>/current
 exec chpst \
      -e $env \
      -u <%= @options[:user] %> \
-     ./bin/thin start
+     bundle exec foreman start
